@@ -6,3 +6,7 @@ exports.showForm = function(request, response) {
         successes: request.flash('successes'),
     });
 };
+
+exports.showMessagePage = function(request, response) {
+  response.render('messages');
+}
